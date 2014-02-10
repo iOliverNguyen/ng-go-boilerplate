@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Blank Project | Register</title>
+  <% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+  <% scripts.forEach( function ( file ) { %>
+  <script type="text/javascript" src="<%= file %>"></script><% }); %>
+</head>
+<body>
+  <div class="modal" style="display:block">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <form class="modal-form" onsubmit="submitRegister()" method="POST" action="/api/user">
+          <div class="modal-header">
+            <h3 class="modal-title">Register</h3>
+          </div>
+          <div class="modal-body">
+            <div class="alert alert-warning" id="message">Complete the form below to register.</div>
+
+            <div class="form-group">
+              <label for="register-form-name">Name</label>
+              <input id="register-form-name" class="form-control" type="text" name="name"/>
+            </div>
+            <div class="form-group">
+              <label for="register-form-username">Username</label>
+              <input id="register-form-username" class="form-control" type="text" name="username"/>
+            </div>
+            <div class="form-group">
+              <label for="register-form-password">Password</label>
+              <input id="register-form-password" class="form-control" type="password" name="password"/>
+            </div>
+            <div class="form-group">
+              <label for="register-form-confirm">Confirm Password</label>
+              <input id="register-form-confirm" class="form-control" type="password" name="confirm"/>
+            </div>
+            <div class="form-group">
+              <label for="register-form-email">Email</label>
+              <input id="register-form-email" class="form-control" type="text" name="email"/>
+            </div>
+          </div>
+          <div class="modal-footer form-group">
+            <input class="btn btn-primary" type="submit" value="Register" />
+            <a href="/" class="btn btn-default">Go Back</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop" style="opacity:0.3"></div>
+</body>
+</html>

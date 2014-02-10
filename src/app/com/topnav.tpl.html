@@ -1,0 +1,29 @@
+<header class="navbar navbar-fixed-top navbar-default cm-navbar">
+  <div class="container">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a class="dropdown-toggle" href="#">
+            <span class="glyphicon glyphicon-th-list"></span>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a ui-sref="home">Blank Project</a></li>
+            <li class="divider"></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/register">Register</a></li>
+          </ul>
+        </li>
+
+        <li class="{{isActive('packages')}}">
+          <a ui-sref="home">
+            <span class="glyphicon glyphicon-home"></span>
+            <span>Home</span>
+          </a>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav" ui-view="toolbar"></ul>
+      <ul class="nav navbar-nav pull-right" ui-view="toolbar-right"></ul>
+  </div>
+</header>
+<div style="height:60px"></div>
