@@ -1,12 +1,9 @@
 package main
 
 import (
-	"encoding/json"
 	"flag"
-	"fmt"
 	"log"
 	"net/http"
-	"time"
 
 	"labix.org/v2/mgo"
 )
@@ -43,7 +40,7 @@ func main() {
 		rootDir += "/"
 	}
 
-	db := connectDatabase("127.0.0.1", *flDbName)
+	connectDatabase("127.0.0.1", *flDbName)
 
 	fileServer := http.FileServer(http.Dir(rootDir))
 	http.Handle("/", fileServer)
