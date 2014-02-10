@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="app" ng-controller="AppCtrl">
+<head>
+  <title ng-bind="pageTitle"></title>
+
+  <meta property="og:title" content="Blank" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+  <meta property="og:description" content="">
+<% styles.forEach( function ( file ) { %>
+  <link rel="stylesheet" type="text/css" href="<%= file %>" /><% }); %>
+<% scripts.forEach( function ( file ) { %>
+  <script type="text/javascript" src="<%= file %>"></script><% }); %>
+<% if (livereload) { %>
+  <script src="http://localhost:35729/livereload.js"></script><% } %>
+</head>
+<body>
+<top-nav></top-nav>
+<div class="container" ui-view="main"></div>
+</body>
+</html>
