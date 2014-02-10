@@ -48,7 +48,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
 
     compile_tmp: '<%= compile_dir %>/_tmp',
-    dest_appview: 'appviews',
+    dest_appview: 'build/public',
     file_suffix: '-<%= pkg.version %>',
     gen_files: '<%= src_assets %>/*<%= file_suffix %>.*',
     node_cmd: 'node',
