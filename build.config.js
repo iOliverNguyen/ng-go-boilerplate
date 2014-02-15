@@ -6,6 +6,7 @@ module.exports = {
    * compile_dir : directory to copy compiled files.
    * assets_dir  : directory inside /public, for storing assets.
    */
+  build_dir: 'build',
   dist_dir: 'dist',
   compile_dir: 'bin',
   assets_dir: 'assets',

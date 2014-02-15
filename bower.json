@@ -1,15 +1,15 @@
 {
   "name": "4u-tours",
   "version": "0.2.0",
-  "devDependencies": {
-
-  },
+  "devDependencies": {},
   "dependencies": {
-    "angular": "~1.2.7",
-    "bootstrap": "~3.0.3",
-    "angular-bootstrap": "~0.9.0",
+    "angular": "1.2.13",
+    "bootstrap": "3.0.3",
+    "angular-bootstrap": "0.10.0",
     "angular-ui-router": "0.2.7",
-    "angular-ui-utils": "~0.1.0",
-    "angular-sanitize": "~1.2.7"
+    "angular-ui-utils": "0.1.1",
+    "angular-sanitize": "1.2.13",
+    "angular-mocks": "1.2.13",
+    "angular-placeholder": "1.0.0"
   }
 }
