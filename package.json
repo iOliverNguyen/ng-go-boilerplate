@@ -39,7 +39,7 @@
     "grunt-mocha-test": "0.8.1",
     "grunt-ngmin": "0.0.3",
     "grunt-watch-change": "0.1.1",
-    "karma": "0.11.0",
+    "karma": "0.10.9",
     "karma-chai": "0.0.2",
     "karma-chrome-launcher": "0.1.2",
     "karma-coffee-preprocessor": "0.1.2",
